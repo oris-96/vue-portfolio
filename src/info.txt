@@ -1,0 +1,18 @@
+  header: 'projects',
+      description : ' these contains an exhaustive list of the projects i have worked on that made clients life easier',
+      btnMsg : 'go to projects',
+      headerGit: 'Github',
+      descriptionGit:' find the codes to my projects on here, walk around and see what makes the websites beautiful',
+      btnMsgGit: 'go to github',
+      headerInfo:'LinkedIn',
+      descriptionInfo:'you can get in touch with me on my LinkedIn i am mostly active on here so feel free to get in touch',
+      btnMsgInfo : 'get in touch',
+      aboutMe:" About Me",
+      aboutMeDescription: ` i'm Ibrahim, a software Engineer with a passion for problem solving, i studied Electrical
+                            /Electronics Engineering during my undergraduate bachelor's, i was always fascinated by software and how they were put together
+                            the curiosity made me start the journey of teaching myself how to code whilst i was pursuing my bachelor's
+                            currently i am pursuing a masters in computer science and quantitative methods and i totally love it. 
+                            `,
+      aboutMeDescriptionCont:` I enjoy building performant applications with clean and dynamic user interface and an efficient backend architecture,
+                               i strive to grow and improve myself daily , i solve problems that help save my clients money`
+    }

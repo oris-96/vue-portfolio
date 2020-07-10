@@ -1,28 +1,57 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div :style="[backgroundImage, color]" id="app">
+    <Navbar />
+    <Hompage />
+    <AboutMe />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Navbar from "./components/Navbar.vue";
+import Hompage from "./components/Hompage.vue";
+import AboutMe from "./components/AboutMe.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Navbar,
+    Hompage,
+    AboutMe
+  },
+  data: () => {
+    return {
+      backgroundImage: {
+        backgroundImage: "linear-gradient(to right top, #485563, #29323c)"
+      },
+      color: {
+        color: "#fff"
+      }
+    };
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+body {
+  margin: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Fondamento", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  position: relative;
+  height: 100vh;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
 </style>
+
+/* .logo{ position:absolute; top: 2rem; left: 2rem; width: 80px; } .card-line{
+display: flex; justify-content: center; align-content: center; } .btn-contact{
+text-align: center; text-transform: uppercase; text-decoration: none; padding:
+.8rem 1rem; display: inline-block; border-radius: 6rem; font-size: .7rem;
+border: none; color: white; background-color:black; margin-bottom: 30px; } */
