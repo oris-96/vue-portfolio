@@ -6,8 +6,8 @@
       </div>
 
       <b-navbar-nav>
-        <b-nav-item href="#">About</b-nav-item>
-        <b-nav-item href="#">Project</b-nav-item>
+        <b-nav-item href="#about">About</b-nav-item>
+        <b-nav-item href="#project">Project</b-nav-item>
       </b-navbar-nav>
     </b-navbar>
   </div>
@@ -17,7 +17,7 @@
 export default {
   data() {
     return {};
-  },
+  }
 };
 </script>
 

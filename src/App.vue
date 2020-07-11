@@ -1,8 +1,9 @@
 <template>
-  <div :style="[backgroundImage, color]" id="app">
+  <div id="app">
     <Navbar />
     <Hompage />
     <AboutMe />
+    <Projects />
   </div>
 </template>
 
@@ -10,23 +11,18 @@
 import Navbar from "./components/Navbar.vue";
 import Hompage from "./components/Hompage.vue";
 import AboutMe from "./components/AboutMe.vue";
+import Projects from "./components/Projects.vue";
 
 export default {
   name: "App",
   components: {
     Navbar,
     Hompage,
-    AboutMe
+    AboutMe,
+    Projects
   },
   data: () => {
-    return {
-      backgroundImage: {
-        backgroundImage: "linear-gradient(to right top, #485563, #29323c)"
-      },
-      color: {
-        color: "#fff"
-      }
-    };
+    return {};
   }
 };
 </script>
@@ -40,13 +36,9 @@ body {
   font-family: "Fondamento", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   position: relative;
-  height: 100vh;
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: top;
-  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #485563, #29323c);
 }
 </style>
 
